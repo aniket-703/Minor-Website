@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    min-height: 100vh; /* Change to min-height to ensure the body covers at least the viewport height */
+    text-align: center;
+    background-color: white;
+    padding: 0.1rem;
+    background-image: url(dashboard-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* Remove default margin to prevent unwanted spacing */
+}
+
+/* Nav bar section css  */
+.heading-text {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    padding: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    gap: 0.2rem;
+}
+
+.logo-icon {
+    height: 4.5rem;
+    width: 4rem;
+
+}
+
+.link {
+    margin: auto;
+    display: none;
+    gap: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:950px) {
+    .link {
+        display: flex;
+    }
+}
+
+.btn {
+    color: black;
+}
+
+.login {
+    border: none;
+    display: none;
+    border-radius: 0.375rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 106, 208);
+    margin-left: auto;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:950px) {
+    .login {
+        display: flex;
+
+    }
+}
+
+/* .dropdown_menu{
+    display: none;
+    position:absolute;
+    right: 2rem;
+    top: 6.8rem;
+    width: 15rem;
+    font-size: 1.1rem;
+    background-color: rgba(25, 25, 27, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+      
+}
+
+.dropdown_menu li{
+padding: 0.8rem;
+display: flex;
+align-items: center;
+justify-content: center;
+} */
+
+.menu {
+    display: none;
+    border: none;
+    height: 0;
+}
+
+.menu-icon {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:950px) {
+    .menu {
+        display: flex;
+    }
+}
+
+.login:hover {
+    background-color: rgb(48, 130, 237);
+}
+
+.active,
+.btn:hover {
+    color: rgb(69, 227, 48);
+}
+
+/* contact form css */
+.contact {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    
+}
+
+.email,
+.text-field,
+.first,
+.last {
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    margin: auto; /* Centering the container */
+    animation: slideFromBottom 1.5s ease forwards;
+    
+}
+
+@keyframes slideFromBottom {
+
+    0% {
+        opacity: 0.5;
+        transform: translatey(20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    /* Allows vertical resizing */
+    overflow-y: auto;
+    /* Adds a vertical scrollbar if the content overflows */
+}
+
+.submit {
+    background-color: #24a42a;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: #16891c;
+}
+
+/* Footer css */
+.footer{
+    margin-top: 2rem;
+}
+.copyright {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 50px;
+}
+
+.social-icon-links {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+.social-icon-links a {
+    margin: 0 10px; 
+}
+
+.fa-brands.fa-facebook,
+.fa-brands.fa-instagram,
+.fa-brands.fa-x-twitter,
+.fa-brands.fa-linkedin,
+.fa-brands.fa-github {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px; /* Add padding to the icons */
+    transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.fa-brands.fa-x-twitter:hover
+{
+    opacity: 0.9;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-facebook:hover
+{
+    opacity: 0.9;
+    color: #4267B2;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-instagram:hover
+{
+    opacity: 0.9;
+    color:#d6249f ;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-github:hover
+{
+    opacity: 0.9;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-linkedin:hover
+{
+    opacity: 0.9;
+    color:#4267B2;
+    background-color: rgb(255, 255, 255);
+}

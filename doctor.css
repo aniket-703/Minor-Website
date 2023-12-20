@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: white;
+    padding: 0.1rem;
+    background-image: url(dashboard-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Nav bar section css  */
+.heading-text {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    padding: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    gap: 0.2rem;
+}
+
+.logo-icon {
+    height: 4.5rem;
+    width: 4rem;
+
+}
+
+.link {
+    margin: auto;
+    display: none;
+    gap: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:950px) {
+    .link {
+        display: flex;
+    }
+}
+
+.btn {
+    color: black;
+}
+
+.login {
+    border: none;
+    display: none;
+    border-radius: 0.375rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 106, 208);
+    margin-left: auto;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:950px) {
+    .login {
+        display: flex;
+
+    }
+}
+
+/* .dropdown_menu{
+    display: none;
+    position:absolute;
+    right: 2rem;
+    top: 6.8rem;
+    width: 15rem;
+    font-size: 1.1rem;
+    background-color: rgba(25, 25, 27, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+      
+}
+
+.dropdown_menu li{
+padding: 0.8rem;
+display: flex;
+align-items: center;
+justify-content: center;
+} */
+
+.menu {
+    display: none;
+    border: none;
+    height: 0;
+}
+
+.menu-icon {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:950px) {
+    .menu {
+        display: flex;
+    }
+}
+
+.login:hover {
+    background-color: rgb(48, 130, 237);
+}
+
+.active,
+.btn:hover {
+    color: rgb(69, 227, 48);
+}
+
+/* Fieldset css */
+.doctor-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.doctor-detail{
+    border:none;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    border-radius: 1rem;
+    background-color: #30b9c318;
+}
+.hospital-d {
+    height: auto;
+    width: 8rem;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 2rem;
+}
+
+.row {
+    margin: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+}
+
+.doctor-text-box{
+    padding-top: 1.5rem;
+}
+
+.doctor-text {
+    height: auto;
+    width: 20rem;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 0.3rem;
+}
+
+.legend-text{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(85, 174, 215);
+    
+}
+
+.legend {
+    border: 1px solid rgb(85, 174, 215); 
+    border-radius: 5px; 
+    padding: 0.2rem 1rem; 
+}
+
+/* Footer css */
+.footer{
+    margin-top: 5rem;
+}
+.copyright {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 50px;
+}
+
+.social-icon-links {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+.social-icon-links a {
+    margin: 0 10px; 
+}
+
+.fa-brands.fa-facebook,
+.fa-brands.fa-instagram,
+.fa-brands.fa-x-twitter,
+.fa-brands.fa-linkedin,
+.fa-brands.fa-github {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px; /* Add padding to the icons */
+    transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.fa-brands.fa-x-twitter:hover
+{
+    opacity: 0.9;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-facebook:hover
+{
+    opacity: 0.9;
+    color: #4267B2;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-instagram:hover
+{
+    opacity: 0.9;
+    color:#d6249f ;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-github:hover
+{
+    opacity: 0.9;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-linkedin:hover
+{
+    opacity: 0.9;
+    color:#4267B2;
+    background-color: rgb(255, 255, 255);
+}

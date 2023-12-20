@@ -1,0 +1,67 @@
+/* Footer css */
+.footer{
+    margin-top: 15rem;
+}
+.copyright {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 50px;
+}
+
+.social-icon-links {
+    padding: 3rem;
+    justify-content: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+.social-icon-links a {
+    margin: 0 10px; 
+}
+
+.fa-brands.fa-facebook,
+.fa-brands.fa-instagram,
+.fa-brands.fa-x-twitter,
+.fa-brands.fa-linkedin,
+.fa-brands.fa-github {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px; /* Add padding to the icons */
+    transition: all 0.3s ease; /* Add smooth transition effect */
+}
+
+.fa-brands.fa-x-twitter:hover
+{
+    opacity: 0.9;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-facebook:hover
+{
+    opacity: 0.9;
+    color: #4267B2;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-instagram:hover
+{
+    opacity: 0.9;
+    color:#d6249f ;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-github:hover
+{
+    opacity: 0.9;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.fa-brands.fa-linkedin:hover
+{
+    opacity: 0.9;
+    color:#4267B2;
+    background-color: rgb(255, 255, 255);
+}

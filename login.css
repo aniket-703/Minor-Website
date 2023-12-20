@@ -1,0 +1,117 @@
+/* For the whole body */
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(bg1.jpeg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(3px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+/* Nav bar section css  */
+.heading-text {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    padding: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    gap: 0.2rem;
+}
+
+.logo-icon {
+    height: 4.5rem;
+    width: 4rem;
+
+}
+
+/* Login section css */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.email,
+.password {
+    text-align: left;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.login {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.options{
+    padding-bottom: 1rem;
+}
+
+#forget {
+    color: #000000;
+    cursor: pointer;
+    font-size: small;
+    float: left;
+}
+
+#forget:hover {
+    color: #df0f0f;
+}
+
+#sign_up {
+    color: rgb(28, 190, 80);
+    cursor: pointer;
+    font-size: small;
+    float: right;
+    text-decoration: none;
+}
+
+#sign_up:hover{
+    color: rgb(12, 237, 83);
+}
+
+.submit{
+    background-color: #24a42a;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: #16891c;
+}
